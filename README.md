@@ -44,19 +44,19 @@ The sales insights data tables as show below:
   
 ## Data Analysis (DAX)
 ### Key Measures:
-```
-Profit Margin % = DIVIDE ([Total Profit Margin], [Revenue],0)
-Profit Margin Contribution % = DIVIDE ([Total Profit Margin], CALCULATE ([Total Profit Margin], ALL ('sales products'), ALL ('sales customers'), ALL ('sales markets')))
-Revenue = SUM ('sales transactions'[sales_amount])
-Revenue Contribution % = DIVIDE([Revenue], CALCULATE([Revenue], ALL ('sales products'), ALL ('sales customers'), ALL ('sales markets')))
-Revenue LY = CALCULATE([Revenue], SAMEPERIODLASTYEAR ('sales date'[date]))
-Sales quantity = SUM ('sales transactions'[sales_qty])
-Total Profit Margin = SUM ('Sales transactions'[Profit_Margin])
-Profit Target:
-Profit Target1 = GENERATESERIES (-0.05, 0.15, 0.01)
-Profit Target Value = SELECTEDVALUE ('Profit Target1'[Profit Target])
-Target Diff = [Profit Margin %]-'Profit Target1'[Profit Target Value]
-```
+
+*   Profit Margin % = ``` DIVIDE ([Total Profit Margin], [Revenue],0) ```
+*   Profit Margin Contribution % = ``` DIVIDE ([Total Profit Margin], CALCULATE ([Total Profit Margin], ALL ('sales products'), ALL ('sales customers'), ALL ('sales markets'))) ```
+*   Revenue = ``` SUM ('sales transactions'[sales_amount]) ```
+*   Revenue Contribution % =  ``` DIVIDE([Revenue], CALCULATE([Revenue], ALL ('sales products'), ALL ('sales customers'), ALL ('sales markets'))) ```
+*   Revenue LY = ``` CALCULATE([Revenue], SAMEPERIODLASTYEAR ('sales date'[date])) ```
+*   Sales quantity = ``` SUM ('sales transactions'[sales_qty]) ```
+*   Total Profit Margin = ``` SUM ('Sales transactions'[Profit_Margin]) ```
+##### Profit Target:
+*   Profit Target1 = ``` GENERATESERIES (-0.05, 0.15, 0.01) ```
+*   Profit Target Value = ``` SELECTEDVALUE ('Profit Target1'[Profit Target]) ```
+*   Target Diff = ``` [Profit Margin %]-'Profit Target1'[Profit Target Value] ```
+
 ## Power BI Visualization: Key Insights Dashboard
 
 The Key Insights Dashboard for AtliQ Hardware is designed to provide a quick yet comprehensive view of sales performance. Featuring a Revenue Trend and Sales Quantity Trends chart, stakeholders can easily track revenue and product quantity dynamics over time. The Top 5 Customers section highlights key contributors to revenue, while Revenue by Product Code offers insights into individual product performance. Geographical perspectives are provided through Sales Quantity and Revenue by Markets charts. Cards display key metrics like total Revenue and Sales Quantity, and a slicer enhances interactivity for customized data analysis. The visually appealing dark canvas background adds clarity to the presented information, enabling informed decision-making.
