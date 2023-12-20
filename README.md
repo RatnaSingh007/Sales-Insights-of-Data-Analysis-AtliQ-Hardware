@@ -28,11 +28,20 @@ Perform various SQL statements to extract insights, including customer records, 
 *   Connect MySQL database with Power BI Desktop.
 *   Load data into Power BI Desktop from MySQL.
 *   Transform data using Power Query for data cleaning and ETL operations.
+  ![Scatter digram](https://github.com/RatnaSingh007/Sales-Insights-of-Data-Analysis-AtliQ-Hardware/assets/146417100/bef6bb09-4abe-445a-9d97-53e34e2b869c)
+
 ### Data Cleaning Tasks:
 *   Refine the **'sales.market'** table by filtering out null values.
 *   Filter negative and zero values in the **'sales.transactions table'**.
 *   Convert USD values to INR for accurate representation.
 *   Identify and compute total USD values for further analysis.
+## Data Modeling:
+And then dataset was cleaned and transformed, it was ready to the data modeled.
+
+The sales insights data tables as show below:
+![Scatter digram2](https://github.com/RatnaSingh007/Sales-Insights-of-Data-Analysis-AtliQ-Hardware/assets/146417100/64ae199a-4fc4-4ef8-af01-14ce29ce425d)
+
+  
 ## Data Analysis (DAX)
 ### Key Measures:
 ```
